@@ -6,9 +6,20 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 export function Landing (setSelectedPage) {
     const isAboveLarge = useMediaQuery("(min-widht: 1060px)")
 
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/assets/CinloLosada.pdf'; 
+        link.target = '_blank'; 
+        link.download = 'CinloLosada.pdf'; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+    
+
     return (
         <section 
-            id="home" 
+            id="inicio" 
             className="md:flex md:justify-between md:items-center md:h-full gap-16 py-48"
         >
 
@@ -51,8 +62,10 @@ export function Landing (setSelectedPage) {
                                 Losada
                             </span>
                         </p>
-                        <p className="mt-10 mb-7 text-sm text-center md:text-start" >
-                        ¡Hola! Soy CinLo, una desarrolladora Full Stack apasionada. Estoy comprometido a crecer en este campo, y mi objetivo es expandir mis habilidades y conocimientos para colaborar en proyectos emocionantes y brindar soluciones creativas.
+                        <p className="mt-10 mb-5 text-sm text-center md:text-start" >
+                        ¡Hola! Soy CinLo, una desarrolladora Full Stack.<br/>
+                        Estoy comprometida en crecer en este campo y expandir mis habilidades y conocimientos para colaborar en nuevos proyectos.
+                        
                         </p>
                     </motion.div>
 
@@ -72,17 +85,15 @@ export function Landing (setSelectedPage) {
                             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
                             hover:bg-blue hover:text-white transition duration-500"
                             onClick={() => setSelectedPage("contact")}
-                            href="#contact"
+                            href="#contacto"
                         >
-                            Contactame!
+                            Contáctame!
                         </AnchorLink>
                         <AnchorLink
                             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-                            onClick={() => setSelectedPage("contact")}
-                            href="#contact"
                         >
                             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-                            C V
+                                <button onClick={handleDownload}>CV</button>
                             </div>
                         </AnchorLink>
                     </motion.div>

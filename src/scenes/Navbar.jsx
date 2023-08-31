@@ -37,29 +37,29 @@ export function Navbar ({ isTopOfPage, selectedPage, setSelectedPage }) {
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
-              page="Home"
+              page="Inicio"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Skills"
+              page="Habilidades"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Projects"
+              page="Proyectos"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Contact"
+              page="Contacto"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
           </div>
         ) : (
           <button
-            className="rounded-full p-2 "
+            className="p-2 flex justify-end"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <img alt="menu-icon" src={MenuIcon} width="30%"/>
@@ -68,33 +68,33 @@ export function Navbar ({ isTopOfPage, selectedPage, setSelectedPage }) {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px] p-12">
             {/* CLOSE ICON */}
-            <div className="flex justify-end p-12">
+            <div className="flex justify-end pr-6 pt-0">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src={CloseIcon} width="30%"/>
+                <img alt="close-icon" src={CloseIcon} width="10%"/>
               </button>
             </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+            <div className="flex flex-col gap-10 text-2xl text-deep-blue p-12">
               <Link
-                page="Home"
+                page="Inicio"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Skills"
+                page="Habilidades"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Projects"
+                page="Proyectos"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Contact"
+                page="Contacto"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
