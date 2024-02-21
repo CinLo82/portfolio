@@ -7,8 +7,8 @@ export function Footer()  {
         <SocialMediaIcons />
       </div> 
       <div className="md:flex justify-center text-center ">
-        <p className="font-playfair font-semibold text-2xl text-deep-blue">
-          CinLo💙
+        <p className="font-playfair font-semibold text-2xl text-red">
+          CinLo
         </p>   
       </div>
     </footer>
