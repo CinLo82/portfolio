@@ -4,7 +4,7 @@
 
 
 ## 🚀 Deploy
-El proyecto se encuentra desplegado en [Netlify](https://cinlo-portfolio.netlify.app/).
+El proyecto se encuentra desplegado en <a href="https://cinlo-portfolio.netlify.app/" target="_blank">Netlify</a>.
 
 ## 🧰 Tecnologías Utilizadas
 
@@ -19,19 +19,11 @@ El proyecto se encuentra desplegado en [Netlify](https://cinlo-portfolio.netlify
 
 
 
-
-
 ## 📸 Página de Inicio
 
-<div style="text-align: center;">
-  <img src="public/assets/landing-page.png" alt="Landing Page" style="width: 50%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-</div>
-
-
-## Proyectos
-
-
-Projects
+<p align="center">
+  <img src="public/assets/landing-page.png" alt="Landing Page" width="50%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+</p>
 
 
 ## 📞 Contacto
