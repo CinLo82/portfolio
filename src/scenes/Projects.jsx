@@ -51,7 +51,7 @@ const Project = ({ title, description, link, githubLink }) => {
                   target="_blank" 
                   rel="noopener noreferrer"   
                   >
-                  Ver proyecto
+                  Deploy
                 </a>
               )}
           </div>

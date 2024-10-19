@@ -25,7 +25,8 @@ export function MySkills () {
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
                     Desarrolladora full stack. <br/>
-                    Utilizo GitHub para colaborar en proyectos y mantener un flujo de trabajo eficiente.
+                    Me especializo en la creación de sitios web y aplicaciones web. <br/>
+                    Tengo experiencia en el uso de tecnologías modernas y herramientas de diseño.
                      </p>
                 </motion.div>
 
@@ -94,17 +95,52 @@ export function MySkills () {
                 >
                     <div className="relative h-32">
                         <div className="z-10">
-                            <p className="font-playfair font-semibold text-3xl">React-Next</p>
+                            <p className="font-playfair font-semibold text-3xl">React - Next</p>
                             <p className="font-playfair font-semibold text-3xl mt-3">
-                                Node-Express
+                                Astro
                             </p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">
+                                Node - Express
+                            </p>
+                           
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
                         Trabajo con frameworks como React, Next.js, Node.js y Express.js. <br/>
-                        Utilizo herramientas como Tailwind, Bootstrap y Figma para crear diseños modernos y responsivos. 
+                        Actualmente estoy aprendiendo Astro para crear sitios web más rápidos y ligeros.
                     </p>
+                </motion.div>
+
+                <motion.div
+                    className="md:w-1/3 mt-10"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, y: 50 },
+                        visible: { opacity: 1, y: 0 }
+                    }} 
+                >
+                    <div className="relative h-32">
+                        <div className="z-10">
+                            <p className="font-playfair font-semibold text-3xl">WordPress</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">
+                            Tailwind - figma
+                            </p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">
+                                Bootstrap
+                            </p>
+                        </div>
+                        <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+                    </div>
+                    <p className="mt-5">
+                    He trabajado con WordPress para crear sitios web y tiendas en línea. <br/>
+                    Utilizo herramientas como Tailwind, Bootstrap y Figma para crear diseños modernos y responsivos.
+                    </p>
+
+                   
                 </motion.div>
 
                  <motion.div
@@ -128,11 +164,15 @@ export function MySkills () {
                                 GitHub
                             </p>
                         </div>
-                        <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+                        <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
                     Estoy familiarizada en el uso de bases de datos como MongoDB, MySQL y PostgreSQL.
+                    <br/>
+                    Utilizo GitHub para colaborar en proyectos y mantener un flujo de trabajo eficiente.
+
                     </p> 
+
                 </motion.div>
                 </div>
         </section>

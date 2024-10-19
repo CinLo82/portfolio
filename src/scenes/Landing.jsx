@@ -57,13 +57,15 @@ export function Landing (setSelectedPage) {
                         }}
                     >
                         <p className="text-6xl font-playfair z-10 text-center md:text-start">
-                            CinLo {""}
+                            Cintia {""}
                             <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]" >
                                 Losada
                             </span>
                         </p>
                         <p className="mt-10 mb-5 text-sm text-center md:text-start" >
-                        ¡Hola! Soy CinLo, una desarrolladora Full Stack.<br/>
+                        ¡Hola! Soy Cintia, desarrolladora Full Stack.<br/>
+                        Me apasiona la tecnología y la creatividad. Aquí encontrarás mis proyectos y
+                        habilidades en el desarrollo web.
                         Estoy comprometida en crecer en este campo y expandir mis habilidades y conocimientos para colaborar en nuevos proyectos.
                         
                         </p>
